@@ -1,0 +1,120 @@
+html {
+  font-family: "Open Sans", sans-serif; /* Requirement-2.1 */
+  font-size: 16px; /* Requirement-2.9 */
+  height: 100%; /* Requirement-2.7 */
+}
+
+/* Requirement-2.A */
+body {
+  user-select: none;
+  overflow: overlay; /* Requirement-2.14 */
+  z-index: 0;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.05rem; /* Requirement-2.2 */
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  background-repeat: no-repeat; /* Requirement-2.4 */
+  background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  z-index: 1; /* Requirement-2.17 */
+  visibility: none; /* Requirement-2.16 */
+  background-color: #180606ec;
+  position: fixed; /* Requirement-2.15 */
+  top: 0;
+  width: 100%;
+  margin-bottom: 3rem; /* Requirement-2.10 */
+}
+
+nav ul {
+  overflow: hidden;
+  list-style-type: none; /* Requirement-2.8 */
+  margin: 0;
+  padding: 0;
+}
+
+/* Requirement-2.F */
+nav ul li {
+  clear: none; /* Requirement-2.13 */
+}
+
+nav ul li a {
+  display: block; /* Requirement-2.12 */
+  color: white; /* Requirement-2.3 */
+  text-align: center;
+  padding: 0.8rem 0.8rem;
+  text-decoration: none;
+}
+
+/* Requirement-2.E */
+nav ul li a:hover {
+  background-color: rgb(4, 69, 131);
+}
+
+img {
+  border-color: rgb(8, 25, 48);
+  border-style: outset; /* Requirement-2.5 */
+  border-radius: 1rem;
+}
+
+/* Requirement-2.C */
+.navbar-container {
+  margin: 0 auto;
+  width: clamp(200px, 80vw, 800px);
+}
+
+.navlink-left {
+  float: left; /* Requirement-2.11 */
+}
+
+.navlink-right {
+  float: right;
+}
+
+main {
+  min-height: 70vh;
+  padding-top: 5rem;
+  margin: 0 auto;
+  width: clamp(200px, 80vw, 800px);
+}
+
+footer {
+  text-align: center;
+  margin: 0 auto;
+  width: clamp(200px, 80vw, 800px);
+}
+
+/* Requirement-2.B */
+h1,
+h2,
+h3 {
+  color: rgb(39, 33, 65);
+}
+
+/* Requirement-2.G */
+details {
+  background-color: rgba(136, 80, 80, 0.247);
+}
+
+/* Requirement-2.H */
+summary {
+  padding: 1rem;
+  color: white;
+  background-color: rgba(10, 11, 32, 0.76);
+}
+
+details p {
+  padding: 0 1rem 1rem 1rem;
+}
+
+/* Requirement-2.D */
+#copyright {
+  color: rgb(85, 85, 85);
+}

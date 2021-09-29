@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <!-- Charles Kypros -->
-<!-- CS 2900 HW 1 -->
+<!-- CS 2900 HW 2 -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Open Sans Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
     <!-- Requirement-1.A -->
     <title>Charles Kypros</title>
   </head>
@@ -15,18 +26,20 @@
       <!-- Requirement-1.D -->
       <nav>
         <!-- Requirement-1.K -->
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <!-- Requirement-1.I -->
-            <a href="links.html">Favorite Webpages</a>
-          </li>
-          <li>
-            <a href="contact.html">Contact Information</a>
-          </li>
-        </ul>
+        <div class="navbar-container">
+          <ul>
+            <li class="navlink-left">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="navlink-left">
+              <!-- Requirement-1.I -->
+              <a href="links.html">Favorite Webpages</a>
+            </li>
+            <li class="navlink-right">
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
@@ -70,16 +83,6 @@
           <figcaption>Please don't inspect my search history.</figcaption>
         </figure>
       </section>
-    </main>
-    <!-- Requirement-1.C -->
-    <footer>
-      <!-- Requirement-1.G -->
-      <p>
-        <!-- Requirement-1.J -->
-        <a href="#header">Return to top of page</a>
-        <!-- Requirement-1.H -->
-        <span><small> Copyright &copy; 2021 Charles Kypros.</small></span>
-      </p>
       <!-- Requirement-1.P -->
       <details>
         <!-- Requirement-1.Q -->
@@ -91,6 +94,18 @@
           internal link List Figure FigureCaption Image Table Details Summary
         </p>
       </details>
+    </main>
+    <!-- Requirement-1.C -->
+    <footer>
+      <!-- Requirement-1.G -->
+      <p>
+        <!-- Requirement-1.J -->
+        <a href="#header">Return to top of page</a>
+        <!-- Requirement-1.H -->
+        <span>
+          <small id="copyright"> Copyright &copy; 2021 Charles Kypros. </small>
+        </span>
+      </p>
     </footer>
   </body>
 </html>
